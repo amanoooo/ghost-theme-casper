@@ -13,6 +13,7 @@
 
     {{!-- Styles'n'Scripts --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/toc.css"}}" />
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -61,6 +62,11 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
+    
+    {{!-- 引入 支持文件 及 Tocify 插件 --}}
+    <script src="https://cdn.bootcss.com/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="{{asset "js/jquery.tocify.min.js"}}"></script>
+
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
 
     {{#if pagination.pages}}

@@ -36,6 +36,9 @@ into the {body} of the default.hbs template --}}
                 <div class="post-content">
                     {{content}}
                 </div>
+
+                {{> "toc"}}
+
                 <div id="disqus_thread"></div>
                         <script>
 
@@ -90,11 +93,10 @@ into the {body} of the default.hbs template --}}
 
         </article>
 
+        {{> "toc"}}
+
     </div>
 </main>
-
-
-{{> "toc"}}
 
 {{!-- Links to Previous/Next posts --}}
 <aside class="read-next outer">
